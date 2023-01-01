@@ -1,3 +1,10 @@
+pub mod ludo_state;
+pub mod strategy;
+
+use ludo_state::LudoState;
+
 fn main() {
-    println!("Hello, world!");
+    let state = LudoState::new();
+
+    println!("{state:?}");
 }
